@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./static/css/main.css">
 </head>
 <body>
-    <header class="flex items-center justify-between mx-auto py-3 text-white font-dosis bg-gray-800 w-full md:px-10 px-3">
+    <header class="relative flex items-center justify-between mx-auto py-3 text-white font-dosis bg-gray-800 w-full md:px-10 px-3">
         <h1 class="text-2xl md:text-4xl font-bold">
             <a href="index.html">
                 DC
@@ -19,10 +19,43 @@
         <nav>
             <ul class="flex font-semibold">
                 <li class="text-sm md:text-xl ml-4 px-4 py-3"><a href="stack.html">Stack</a></li>
-                <li class="text-sm md:text-xl ml-4 px-4 py-3"><a href="projects.html">Projects</a></li>
                 <li class="text-sm md:text-xl ml-4 px-4 py-3 rounded-3xl font-semibold bg-green-500 hover:bg-green-700"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <main class="h-screen bg-gradient-to-r from-green-900 to-gray-800 text-white">
+        <section class="h-full flex flex-col items-center justify-center font-semibold font-dosis">
+            <h2 class="text-3xl font-bold">Contact with Me</h2>
+            <p>Replies within 24 hours</p>
+            <form action="" class="md:w-1/4 mt-5 flex flex-col items-center justify-center p-10 bg-green-800 border-solid border border-green-500">
+                <input 
+                    class="w-full rounded font-semibold border border-solid border-green-500 py-2 px-4 mb-5 text-green-500 placeholder-green-500"
+                    type="text" 
+                    name="full-name" 
+                    placeholder="Enter Your Full Name"
+                    required
+                />
+                <input 
+                    class="w-full rounded font-semibold border border-solid border-green-500 py-2 px-4 mb-5 text-green-500 placeholder-green-500"
+                    type="email" 
+                    name="email" 
+                    placeholder="Enter Your Email"
+                    required
+                />
+                <textarea 
+                    class="w-full rounded font-semibold border border-solid border-green-500 py-2 px-4 mb-5 text-green-500 placeholder-green-500"
+                    name="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Enter message"
+                    required
+                ></textarea>
+                <input 
+                    class="w-full bg-green-500 text-white font-bold tracking-wider py-2 rounded cursor-pointer transition-all hover:bg-green-700" 
+                    type="submit" 
+                    value="Submit">
+            </form>
+        </section>
+    </main>
 </body>
 </html>

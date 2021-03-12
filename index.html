@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./static/css/main.css">
 </head>
 <body>
-    <header class="absolute flex items-center justify-between mx-auto py-3 text-white font-dosis bg-gray-800 w-full md:px-10 px-3">
+    <header class="relative flex items-center justify-between mx-auto py-3 text-white font-dosis bg-gray-800 w-full md:px-10 px-3">
         <h1 class="text-2xl md:text-4xl font-bold">
             <a href="index.html">
                 DC
@@ -19,7 +19,6 @@
         <nav>
             <ul class="flex font-semibold">
                 <li class="text-sm md:text-xl ml-4 px-4 py-3"><a href="stack.html">Stack</a></li>
-                <li class="text-sm md:text-xl ml-4 px-4 py-3"><a href="projects.html">Projects</a></li>
                 <li class="text-sm md:text-xl ml-4 px-4 py-3 rounded-3xl font-semibold bg-green-500 hover:bg-green-700"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,8 +31,10 @@
             <p class="font-bold text-3xl md:text-5xl mt-4">Hi There!</p>
             <p class="font-bold text-3xl md:text-5xl mt-4">I am Diego Celis</p>
             <p class="font-bold text-3xl md:text-5xl mt-4 text-green-200 animate-pulse">A Web Developer</p>
-            <button class="mb-3 mr-5 px-5 py-3 mt-5 rounded-3xl font-semibold bg-green-500 hover:bg-green-700">Contact Me</button>
-            <button class="mb-3 mr-5 px-5 py-3 mt-5 rounded-3xl font-semibold text-green-500 bg-white hover:bg-green-700 hover:text-white">Projects</button>
+            <div class="flex">
+                <a class="mb-3 mr-5 px-5 py-3 mt-5 rounded-3xl font-semibold bg-green-500 hover:bg-green-700" href="/contact.html">Contact Me</a>
+                <a class="mb-3 mr-5 px-5 py-3 mt-5 rounded-3xl font-semibold text-green-500 bg-white hover:bg-green-700 hover:text-white" href="/stack.html">Stack</a>
+            </div>
         </section>
     </main>   
 </body>
